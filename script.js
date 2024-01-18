@@ -31,4 +31,4 @@ let amountPerPerosn = calculateAmountPerPerson(totalBill,numOfPpl)
 
 console.log('Tip: $'+ tip)
 console.log('Total Bill: $'+totalBill)
-console.log('Amount per person: $'+amountPerPerosn)t
+console.log('Amount per person: $'+amountPerPerosn)
