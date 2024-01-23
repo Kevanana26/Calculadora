@@ -18,14 +18,31 @@ document.getElementById('amtPerPersonResult').innerText =
 
 }
 
+// helper function
+
+function calculateTip(bill, quality){
+    if(quality === 'Great'){
+        return bill * .2
+    } else if(quality == 'Good'){
+        return bill * 0.15
+    }else if(quality === 'God Awful'){
+        return bill * .10
+    }else{
+        return 0
+    }  
+}
+
+// helper function (again)
+
+function calculateTotalBill(bill, tip){
+    return bill + tip
+}
 
 
 
-
-
-
-
-
+function amtPerPers(totalBill, numOfPpl){
+    return totalBill/numOfPpl
+}
 
 
 
