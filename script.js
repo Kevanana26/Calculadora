@@ -2,7 +2,7 @@ function calculateAndDisplay(){
     //Get Input values from our HTML//
     let bill = parseFloat(document.getElementById('totalBill').value)
     let numOfPpl = parseInt(document.getElementById('numOfPeople').value)
-    let serviceQuality = parseInt(document.getElementById('serviceQuality').value)
+    let serviceQuality = document.getElementById('serviceQuality').value
 
     let tip = calculateTip(bill,serviceQuality)
     let totalBill = calculateTotalBill(bill,tip)
@@ -40,7 +40,7 @@ function calculateTotalBill(bill, tip){
 
 
 
-function amtPerPers(totalBill, numOfPpl){
+function calculateamtPerPerson(totalBill, numOfPpl){
     return totalBill/numOfPpl
 }
 
